@@ -6,20 +6,27 @@
 [![ArXiv](https://img.shields.io/badge/ArXiv-2511.01891-b31b1b.svg?style=flat-square)](http://arxiv.org/abs/2511.01891)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue?style=flat-square)](https://huggingface.co/RongxinChen)
 
+**Rongxin Chen, Yunfan Li, Yige Yuan, Bingbing Xu, Huawei Shen**
+
 </div>
 
 ---
 
 ## 📖 Abstract
 
-This repository contains the datasets and resources for the paper **"Multi-Personality Generation of LLMs at Decoding-time"**, accepted at **WSDM 2026**.
+Multi-personality generation for LLMs, enabling simultaneous embodiment of multiple personalization attributes, is a fundamental challenge. Existing retraining-based approaches are costly and poorly scalable, while decoding-time methods often rely on external models or heuristics, limiting flexibility and robustness. 
 
-> [!NOTE]
-> The abstract and further details of the methodology will be updated shortly. Please refer to the [ArXiv paper](http://arxiv.org/abs/2511.01891) for the full manuscript.
+In this paper, we propose a novel **Multi-Personality Generation (MPG)** framework under the decoding-time combination paradigm. It flexibly controls multi-personality without relying on scarce multi-dimensional models or extra training, leveraging implicit density ratios in single-dimensional models as a "free lunch" to reformulate the task as sampling from a target strategy aggregating these ratios. To implement MPG efficiently, we design **Speculative Chunk-level based Rejection sampling (SCR)**, which generates responses in chunks and parallelly validates them via estimated thresholds within a sliding window. This significantly reduces computational overhead while maintaining high-quality generation. Experiments on MBTI personality and Role-Playing demonstrate the effectiveness of MPG, showing improvements up to **16%-18%**.
+
+## 🚀 Highlights
+
+- **MPG Framework**: A decoding-time combination paradigm that requires **no extra training** or multi-dimensional models.
+- **SCR Algorithm**: Uses **Speculative Chunk-level Rejection sampling** to parallelly validate generated chunks, significantly reducing computational overhead.
+- **High Performance**: Achieves up to **18% improvement** on MBTI and Role-Playing benchmarks compared to existing methods.
 
 ## 📚 Datasets
 
-We release the **MBTI** and **RolePlay** DPO (Direct Preference Optimization) datasets used in our study. You can access them directly via Hugging Face.
+We release the **MBTI** and **RolePlay** DPO (Direct Preference Optimization) datasets used in our study.
 
 ### 🧩 MBTI Datasets
 These datasets focus on specific Myers-Briggs Type Indicator dimensions.
@@ -44,10 +51,11 @@ Datasets designed for enhancing role-playing capabilities.
 If you find our work or datasets useful, please consider citing our paper:
 
 ```bibtex
-@inproceedings{yourname2026multipersonality,
+@inproceedings{chen2026multipersonality,
   title={Multi-Personality Generation of LLMs at Decoding-time},
-  author={Author One and Author Two and Author Three},
+  author={Chen, Rongxin and Li, Yunfan and Yuan, Yige and Xu, Bingbing and Shen, Huawei},
   booktitle={Proceedings of the 19th ACM International Conference on Web Search and Data Mining (WSDM '26)},
   year={2026},
-  url={[http://arxiv.org/abs/2511.01891](http://arxiv.org/abs/2511.01891)}
+  publisher={ACM},
+  url={http://arxiv.org/abs/2511.01891}
 }
