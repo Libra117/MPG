@@ -20,9 +20,9 @@ In this paper, we propose a novel **Multi-Personality Generation (MPG)** framewo
 
 ## 🚀 Highlights
 
-- **MPG Framework**: A decoding-time combination paradigm that requires **no extra training** or multi-dimensional models.
-- **SCR Algorithm**: Uses **Speculative Chunk-level Rejection sampling** to parallelly validate generated chunks, significantly reducing computational overhead.
-- **High Performance**: Achieves up to **18% improvement** on MBTI and Role-Playing benchmarks compared to existing methods.
+- **Promising Framework (MPG)**: A novel decoding-time paradigm that leverages implicit density ratios from single-dimensional models as a **"free lunch"**, enabling flexible multi-personality control without extra training.
+- **Practical Method (SCR)**: Introduces **Speculative Chunk-level Rejection sampling** with parallel multi-preference scoring, which substantially reduces the computational overhead of large-model evaluations during decoding.
+- **Validated Effectiveness**: Extensive experiments on MBTI simulation and Role-Play scenarios demonstrate significant performance gains, achieving **16%–18% improvement** over baselines.
 
 ## 📚 Datasets
 
