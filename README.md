@@ -24,7 +24,7 @@ In this paper, we propose a novel **Multi-Personality Generation (MPG)** framewo
 - **Practical Method (SCR)**: Introduces **Speculative Chunk-level Rejection sampling** with parallel multi-preference scoring, which substantially reduces the computational overhead of large-model evaluations during decoding.
 - **Validated Effectiveness**: Extensive experiments on MBTI simulation and Role-Play scenarios demonstrate significant performance gains, achieving **16%–18% improvement** over baselines.
 
-## 📚 Datasets
+## 📚 Training Datasets
 
 We release the **MBTI** and **RolePlay** DPO (Direct Preference Optimization) datasets used in our study.
 
