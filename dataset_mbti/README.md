@@ -1,4 +1,4 @@
-## MBTI Datasets
+## Training - MBTI Datasets
 These datasets focus on specific Myers-Briggs Type Indicator dimensions.
 
 | Dimension | Description | Dataset Link |
